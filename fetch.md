@@ -45,6 +45,7 @@ function fetchJsonData($url) {
 
 // Définition de l'URL de l'API
 $apiUrl = "http://127.0.0.1:3000/api/students";
+
 // Ici on utilise la fonction fetchJsonData pour récupérer les données JSON à partir de l'URL
 $data = fetchJsonData($apiUrl);
 
