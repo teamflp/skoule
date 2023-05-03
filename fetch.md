@@ -1,4 +1,4 @@
-Objet : Conseil technique avancé sur la méthode fetch
+Objet : Conseil technique avancé sur la méthode fetch en PHP
 
 Cher(e) apprenant(e),
 
