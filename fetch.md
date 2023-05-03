@@ -23,33 +23,37 @@ GET /api/students
 ````
 Voici comment vous pouvez utiliser cURL pour récupérer ces données et les afficher :
 ````
-// On défini l'URL de l'API
-$apiUrl = "127.0.0.1:3000/api/students";
+// Crée une fonction pour récupérer les données JSON à partir d'une URL
+function fetchJsonData($url) {
+    // Initialisation d'une nouvelle session cURL
+    $ch = curl_init();
 
-// On initialise cURL
-$ch = curl_init();
+    // Définition de l'URL de la requête cURL
+    curl_setopt($ch, CURLOPT_URL, $url);
+    // On demander à cURL de retourner la réponse au lieu de l'afficher directement
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-// On configure les options de cURL
-curl_setopt($ch, CURLOPT_URL, $apiUrl);
-curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+    // Exécution de la la requête cURL et stocker la réponse dans une variable
+    $response = curl_exec($ch);
+    // On fermee la session cURL pour libérer les ressources
+    curl_close($ch);
 
-// On exécute la requête et récupère la réponse
-$response = curl_exec($ch);
+    // On décode la réponse JSON en un tableau associatif et retourner le résultat
+    return json_decode($response, true);
+}
 
-// On ferme la session cURL
-curl_close($ch);
+// Définition de l'URL de l'API
+$apiUrl = "http://127.0.0.1:3000/api/students";
+// Ici on utilise la fonction fetchJsonData pour récupérer les données JSON à partir de l'URL
+$data = fetchJsonData($apiUrl);
 
-// On décode la réponse JSON en un tableau associatif
-$data = json_decode($response, true);
-
-// Fianlement on affichee les données
+// On affiche le contenu du tableau de données
 print_r($data);
 
 ````
-
-<p>Dans le code ci-dessus, j'ai utilisé cURL pour envoyer une requête GET à l'URL de l'API. 
-Ensuite, je récupère la réponse et la décode en un tableau associatif en utilisant json_decode. 
-Enfin, j'affiche les données avec print_r.</p>
+<p>
+  Dans cet exemple, j'ai créé une fonction nommée fetchJsonData qui prend une URL en argument. Cette fonction encapsule la logique de cURL pour effectuer la requête et décoder la réponse JSON. Ainsi, il est possible de réutiliser cette fonction pour d'autres requêtes simplement en changeant l'URL passée en argument.
+</p>
 
 <p>N'hésitez pas à adapter cet exemple à votre projet et à l'essayer avec différentes routes de votre serveur pour vous familiariser avec les requêtes HTTP en PHP.</p>
 
