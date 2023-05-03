@@ -11,7 +11,7 @@ Les cardinalités des relations entre Address-User, User-Order et Product-Order 
 <h2>Points à améliorer :</h2>
 1. La relation entre User et Product nécessitait une correction concernant les cardinalités. Vous aviez initialement mis les cardinalités 1,1 et 1,1,<br>
 alors qu'une relation Many-to-Many (0,n et 0,n) serait plus appropriée pour représenter la relation entre ces entités. Cela permettrait de montrer que 
-**0 ou plusieurs utilisateurs peuvent aimer 0 ou plusieurs produits**.
+0 ou plusieurs utilisateurs peuvent aimer 0 ou plusieurs produits.
 
 <h2>Recommandations pour l'avenir :</h2>
 Soyez attentif aux cardinalités entre les entités et vérifiez qu'elles représentent correctement les relations possibles dans votre système.
