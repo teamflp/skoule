@@ -24,7 +24,7 @@ GET /api/students
 ````
 Voici comment vous pouvez utiliser cURL pour récupérer ces données et les afficher :
 ````
-// Crée une fonction pour récupérer les données JSON à partir d'une URL
+// On créé une fonction pour récupérer les données JSON à partir d'une URL
 function fetchJsonData($url) {
     // Initialisation d'une nouvelle session cURL
     $ch = curl_init();
