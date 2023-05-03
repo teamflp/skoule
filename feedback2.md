@@ -17,6 +17,7 @@ L'apprenant2 a fait un effort notable pour suivre les consignes et réaliser l'a
 4. Les paramètres des méthodes setFirstname(), setLastname() et setJob() ne sont pas typés avec string.
 
 <h2>Points à améliorer</h2>
+
 1. **Implémenter les méthodes manquantes :** Il est important d'ajouter les méthodes insert(), update() et delete() pour la gestion complète des données dans la classe Teacher.<br>
 2. **Améliorer les commentaires (docblocks) :** Les propriétés et méthodes devraient être accompagnées de commentaires clairs et complets pour faciliter la lisibilité et la maintenabilité du code.<br>
 3. **Clarifier les exigences du projet :** L'apprenant2 doit s'assurer de bien comprendre les exigences du projet, notamment en ce qui concerne les méthodes setStatus() et getStatus(). Si nécessaire, il convient de demander des éclaircissements à l'équipe pédagogique.<br>
