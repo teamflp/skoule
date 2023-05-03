@@ -15,11 +15,12 @@ alors qu'une relation Many-to-Many (0,n et 0,n) serait plus appropriée pour rep
 
 <h2>Recommandations pour l'avenir :</h2>
 Soyez attentif aux cardinalités entre les entités et vérifiez qu'elles représentent correctement les relations possibles dans votre système.
-N'hésitez pas à utiliser des outils de modélisation pour vous aider à visualiser et valider votre MCD. Des outils tels que 
-1. **JMerise**
-2. **Lucid-chart**, 
-3. **Visual Paradigm** et 
-4. **dbdiagram.io** sont disponibles pour vous assister dans ce processus.
+N'hésitez pas à utiliser des outils de modélisation pour vous aider à visualiser et valider votre MCD. Des outils tels que<br>
+1. **JMerise**<br>
+2. **Lucid-chart**,<br>
+3. **Visual Paradigm**<br>
+4. **dbdiagram.io**<br>
+sont disponibles pour vous assister dans ce processus.
 <p>Dans l'ensemble, votre travail sur le MCD est encourageant et montre que vous avez une bonne compréhension des concepts de base de la méthode MERISE. 
 Avec quelques ajustements et une attention particulière aux cardinalités, votre MCD sera encore meilleur.</p>
 
