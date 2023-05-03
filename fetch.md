@@ -8,6 +8,7 @@ Qu'est-ce que cURL en PHP ?
 cURL est une bibliothèque qui permet d'envoyer des requêtes HTTP et de communiquer avec des API ou des serveurs en PHP. Elle offre une grande flexibilité et prend en charge divers protocoles tels que HTTP, HTTPS, FTP, etc.
 
 <h3>Voici un aperçu de la syntaxe de base pour utiliser cURL en PHP :</h3>
+
 ````
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, $url);
