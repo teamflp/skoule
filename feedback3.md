@@ -5,7 +5,6 @@
 
 1. Le fichier index.php est bien organisé et structuré, malgré l'absence de certaines routes.
 2. L'utilisation des namespaces et des classes dans l'application montre une compréhension des concepts de base de la programmation orientée objet en PHP.
-3. Les vues sont bien réalisées et l'interface utilisateur est conviviale.
 
 <h2>Points faibles</h2>
 
