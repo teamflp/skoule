@@ -31,7 +31,7 @@ function fetchJsonData($url) {
 
     // Définition de l'URL de la requête cURL
     curl_setopt($ch, CURLOPT_URL, $url);
-    // On demander à cURL de retourner la réponse au lieu de l'afficher directement
+    // On demande à cURL de retourner la réponse au lieu de l'afficher directement
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
     // Exécution de la la requête cURL et stocker la réponse dans une variable
