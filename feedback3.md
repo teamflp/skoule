@@ -15,6 +15,7 @@
 5. Il n'y a pas de protection contre les attaques CSRF dans les formulaires de l'application.
 
 <h2>Points à améliorer</h2>
+
 1. **Ajouter la classe CoreController :** Il est important d'ajouter la classe CoreController pour définir les méthodes de base pour les contrôleurs et garantir une structure cohérente dans toute l'application.<br>
 2. **Corriger et compléter le fichier index.php :** Il faut ajouter la ligne session_start(); pour gérer les sessions utilisateur, rendre le nommage des routes cohérent avec la correction, et ajouter les routes manquantes pour la suppression, la mise à jour des enseignants et des étudiants, ainsi que pour la gestion des utilisateurs.<br>
 3. **Utiliser l'héritage dans le fichier MainController :** L'apprenant3 doit utiliser l'héritage pour rendre le code plus modulaire et facile à maintenir. La méthode show() devrait être déplacée dans une classe CoreController séparée et MainController devrait hériter de CoreController.<br>
