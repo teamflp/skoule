@@ -83,7 +83,7 @@ class Fetcher {
         // On demande à cURL de retourner la réponse au lieu de l'afficher directement
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-        // On exécution la requête cURL et stocke la réponse dans une variable
+        // On exécute la requête cURL et stocke la réponse dans une variable
         $response = curl_exec($ch);
         
         // On ferme la session cURL pour libérer les ressources
