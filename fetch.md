@@ -96,7 +96,7 @@ Pour utiliser cette classe, on instancie un nouvel objet Fetcher et appelle la m
 
 ````
 $url = "http://127.0.0.1:3000/api/students";
-$jsonFetcher = new JsonFetcher($url);
+$jsonFetcher = new Fetcher($url);
 $data = $jsonFetcher->fetchJsonData();
 
 ````
