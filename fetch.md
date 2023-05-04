@@ -24,7 +24,7 @@ GET /api/students
 ````
 Voici comment vous pouvez utiliser cURL avec deux solutions pour récupérer ces données et les afficher :
 
-<h3>Solution 1: utiliser une fonction</h3>
+<h3>Solution 1: avec une fonction</h3>
 
 ````
 // On créé une fonction pour récupérer les données JSON à partir d'une URL
@@ -58,7 +58,7 @@ print_r($data);
 ````
 <p>Dans cet exemple, j'ai créé une fonction nommée fetchJsonData qui prend une URL en argument. Cette fonction encapsule la logique de cURL pour effectuer la requête et décoder la réponse JSON. Ainsi, il est possible de réutiliser cette fonction pour d'autres requêtes simplement en changeant l'URL passée en argument.</p>
 
-<h3>Solution 2 : utiliser une classe</h3>
+<h3>Solution 2 : avec une classe</h3>
 
 ````
 class Fetcher {
