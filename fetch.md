@@ -22,7 +22,7 @@ curl_close($ch);
 ````
 GET /api/students
 ````
-Voici comment vous pouvez utiliser cURL pour récupérer ces données et les afficher avec deux solutions :
+Voici comment vous pouvez utiliser cURL avec deux solutions pour récupérer ces données et les afficher :
 
 <h3>Solution 1: utiliser une fonction</h3>
 
