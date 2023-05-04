@@ -34,11 +34,13 @@ function fetchJsonData($url) {
 
     // Définition de l'URL de la requête cURL
     curl_setopt($ch, CURLOPT_URL, $url);
+    
     // On demande à cURL de retourner la réponse au lieu de l'afficher directement
     curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
     // Exécution la requête cURL et stocke la réponse dans une variable
     $response = curl_exec($ch);
+    
     // On fermee la session cURL pour libérer les ressources
     curl_close($ch);
 
@@ -77,11 +79,13 @@ class Fetcher {
 
         // Définition de l'URL de la requête cURL
         curl_setopt($ch, CURLOPT_URL, $this->url);
+        
         // On demande à cURL de retourner la réponse au lieu de l'afficher directement
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
         // On exécution la requête cURL et stocke la réponse dans une variable
         $response = curl_exec($ch);
+        
         // On ferme la session cURL pour libérer les ressources
         curl_close($ch);
 
