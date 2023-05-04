@@ -18,12 +18,14 @@ curl_close($ch);
 ````
 <h3>Exemple pratique et détaillé d'une requête HTTP avec cURL</h3>
 <p>Imaginons que vous avez une route dans votre serveur pour récupérer la liste des étudiants</p>
+
 ````
 GET /api/students
 ````
 Voici comment vous pouvez utiliser cURL pour récupérer ces données et les afficher avec deux solutions :
 
 <h3>Solution 1: utiliser une fonction</h3>
+
 ````
 // On créé une fonction pour récupérer les données JSON à partir d'une URL
 function fetchJsonData($url) {
