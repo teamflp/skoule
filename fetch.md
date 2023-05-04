@@ -101,6 +101,25 @@ $data = $jsonFetcher->fetchJsonData();
 
 ````
 
+<h3>La différence entre ces deux solutions</h3>
+
+Les deux solutions que je vous ai présenté sont des approches différentes pour résoudre le même problème : récupérer des données JSON à partir d'une URL. <br>Voici les principales différences entre les deux solutions :
+
+**Fonction fetchJsonData :**
+
+1. La fonction est une approche procédurale pour résoudre le problème. Elle nécessite simplement d'appeler la fonction avec l'URL souhaitée pour récupérer les données JSON.
+2. La fonction est plus simple et plus facile à utiliser pour des cas d'utilisation ponctuels.
+3. La fonction n'a pas de gestion d'état, donc chaque appel nécessite de passer l'URL à la fonction.
+
+
+**Classe Fetcher :**
+
+1. La classe est une approche orientée objet pour résoudre le problème. Elle encapsule l'état (l'URL) et le comportement (la récupération des données JSON) dans un objet.
+2. La classe permet une meilleure organisation du code et une extensibilité accrue. Par exemple, vous pouvez ajouter des méthodes supplémentaires ou des propriétés à la classe pour prendre en charge d'autres fonctionnalités liées à la récupération de données JSON.
+3. La classe nécessite une instanciation d'objet, ce qui peut être légèrement plus complexe que l'utilisation d'une simple fonction. Cependant, cela permet de conserver l'état (l'URL) et d'utiliser la méthode fetchJsonData plusieurs fois sans avoir à passer l'URL à chaque appel.
+
+<p>Par conséquent, le choix entre les deux solutions dépendra de vos préférences personnelles.</p>
+
 <p>N'hésitez pas à adapter cet exemple à votre projet et à l'essayer avec différentes routes de votre serveur pour vous familiariser avec les requêtes HTTP en PHP.</p>
 
 <p>J'espère que cette explication vous aidera à mieux comprendre comment réaliser des requêtes HTTP en PHP et à l'utiliser dans vos projets futurs. 
