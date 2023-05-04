@@ -17,7 +17,7 @@ $response = curl_exec($ch);
 curl_close($ch);
 ````
 <h3>Exemple pratique et détaillé d'une requête HTTP avec cURL</h3>
-<p>Imaginons que vous avez une route dans pour récupérer la liste des étudiants</p>
+<p>Imaginons que vous avez une route pour récupérer la liste des étudiants</p>
 
 ````
 GET /api/students
