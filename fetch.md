@@ -61,18 +61,17 @@ print_r($data);
 <h3>Solution 2 : utiliser une classe</h3>
 
 ````
-class Fetcher 
-{
-    // On créer une ropriété pour stocker l'URL
-    private $url;
+class Fetcher {
+    // Propriété pour stocker l'URL, avec une déclaration de type (string)
+    private string $url;
 
-    // Constructeur pour initialiser l'URL
-    public function __construct($url) {
+    // Constructeur pour initialiser l'URL, avec une déclaration de type pour le paramètre
+    public function __construct(string $url) {
         $this->url = $url;
     }
 
-    // Méthode pour récupérer les données JSON à partir d'une URL
-    public function fetchJsonData() {
+    // Méthode pour récupérer les données JSON à partir d'une URL, avec une déclaration de type (array) pour le retour
+    public function fetchJsonData(): array {
         // Initialisation d'une nouvelle session cURL
         $ch = curl_init();
 
